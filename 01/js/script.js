@@ -66,8 +66,10 @@ $(function(){
  $(window).scroll(function() { 
      if(document.body.scrollTop>150){
     document.querySelector(".search").style.background ="#f44";
+    document.querySelector(".search").style.top ="0";
      }else{
          document.querySelector(".search").style.background ="none"; 
+         document.querySelector(".search").style.top ="auto"; 
      }
  }); 
 })
