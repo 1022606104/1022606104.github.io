@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>分类-京东</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-3.3.4-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/swiper-4.2.6.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="sort">
+<!--      底部导航-->
+           <nav>
+               <ul>
+                   <li ><a href="index.html"><i class="fa fa-home"></i><span>首页</span></a></li>
+                   <li><a href="sort.html" class="active"><i class="fa fa-list-ul"></i><span>分类</span></a></li>
+                   <li><a href=""><i class="fa fa-eercast"><i class="hot"></i></i><span>觅MI</span></a></li>
+                   <li><a href=""><i class="fa fa-shopping-cart"></i><span>购物车</span></a></li>
+                   <li><a href=""><i class="fa fa-user-o"></i><span>我的</span></a></li>
+               </ul>
+           </nav>
+<!--       搜索条-->
+        <div class="search" id="search">
+            <div class="left">
+                <i class="fa fa-qrcode"></i>
+                <span>扫阿扫</span>
+            </div>
+            <div class="center">
+                <i class="fa fa-search"></i>
+                <i class="fa fa-microphone"></i>
+                <input type="text" placeholder="华为荣耀8">
+            </div>
+            <div class="fight">
+                <i class="fa fa-commenting-o"></i>
+                <span>消息</span>
+            </div>
+        </div>
+        
+  <div class="minlis" id="minlis">
+      <div class="container">
+          <div class="row">
+              <div class="col-xs-3">
+                  <ul class="sorttext">
+                      <li class="active">热门推荐</li>
+                      <li>手机数码</li>
+                      <li>家用电器</li>
+                      <li>电脑办公</li>
+                      <li>计生情趣</li>
+                      <li>美妆护肤</li>
+                      <li>个护清洁</li>
+                      <li>汽车用品</li>
+                      <li>京东超市</li>
+                      <li>男装</li>
+                      <li>女装</li>
+                      <li>女鞋</li>
+                      <li>母婴童装</li>
+                      <li>运动户外</li>
+                      <li>内衣配饰</li>
+                      <li>食品生鲜</li>
+                      <li>家具家装</li>
+                      <li>箱包手袋</li>
+                      <li>钟表珠宝</li>
+                      <li>图书音像</li>
+                      <li>医药保健</li>
+                      <li>宠物生活</li>
+                      <li>礼品鲜花</li>
+                      <li>农资绿植</li>
+                      <li>生活旅行</li>
+                      <li>奢侈品</li>
+                      <li>全球购</li>
+                      <li>艺术邮币</li>
+                      <li>二手商品</li>
+                      <li>特产馆</li>
+                      <li>京东金融</li>
+                      <li>拍卖</li>
+                      <li>房产</li>
+                  </ul>
+              </div>
+              <div class="col-xs-9">
+               <div class="sotlis">
+                <img src="img/fenlei/5b0e6bc4Ndb303731.jpg" alt="">
+                 <h5>热门推荐</h5>
+                  <div class="row">
+                    <div class="col-xs-4" v-for="lis in lists">
+                            <a :href="lis.lick">
+                            <img :src="lis.img" alt="">
+                            <p>{{lis.name}}</p>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="sotlis">
+                <img src="img/fenlei/5a28ef10N82ab81d3.jpg" alt="">
+                 <h5>手机数码</h5>
+                  <div class="row">
+                    <div class="col-xs-4" v-for="lis in lists1">
+                            <a :href="lis.lick">
+                            <img :src="lis.img" alt="">
+                            <p>{{lis.name}}</p>
+                        </a>
+                        </div>
+                    </div>
+                    
+                     <h5>手机通讯</h5>
+                  <div class="row">
+                    <div class="col-xs-4" v-for="lis in lists2">
+                            <a :href="lis.lick">
+                            <img :src="lis.img" alt="">
+                            <p>{{lis.name}}</p>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="sotlis">
+                 <h5>家用电器</h5>
+                  <div class="row">
+                    <div class="col-xs-4" v-for="lis in lists1">
+                            <a :href="lis.lick">
+                            <img :src="lis.img" alt="">
+                            <p>{{lis.name}}</p>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="sotlis">
+                 <h5>电脑办公</h5>
+                  <div class="row">
+                    <div class="col-xs-4" v-for="lis in lists1">
+                            <a :href="lis.lick">
+                            <img :src="lis.img" alt="">
+                            <p>{{lis.name}}</p>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="sotlis">
+                 <h5>计生情趣</h5>
+                  <div class="row">
+                    <div class="col-xs-4" v-for="lis in lists1">
+                            <a :href="lis.lick">
+                            <img :src="lis.img" alt="">
+                            <p>{{lis.name}}</p>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="sotlis">
+                 <h5>美妆护肤</h5>
+                  <div class="row">
+                    <div class="col-xs-4" v-for="lis in lists1">
+                            <a :href="lis.lick">
+                            <img :src="lis.img" alt="">
+                            <p>{{lis.name}}</p>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="sotlis">
+                 <h5>个护清洁</h5>
+                  <div class="row">
+                    <div class="col-xs-4" v-for="lis in lists1">
+                            <a :href="lis.lick">
+                            <img :src="lis.img" alt="">
+                            <p>{{lis.name}}</p>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="sotlis">
+                 <h5>汽车用品</h5>
+                  <div class="row">
+                    <div class="col-xs-4" v-for="lis in lists1">
+                            <a :href="lis.lick">
+                            <img :src="lis.img" alt="">
+                            <p>{{lis.name}}</p>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="sotlis">
+                 <h5>京东超市</h5>
+                  <div class="row">
+                    <div class="col-xs-4" v-for="lis in lists1">
+                            <a :href="lis.lick">
+                            <img :src="lis.img" alt="">
+                            <p>{{lis.name}}</p>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="sotlis">
+                 <h5>男装</h5>
+                  <div class="row">
+                    <div class="col-xs-4" v-for="lis in lists1">
+                            <a :href="lis.lick">
+                            <img :src="lis.img" alt="">
+                            <p>{{lis.name}}</p>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="sotlis">
+                 <h5>女装</h5>
+                  <div class="row">
+                    <div class="col-xs-4" v-for="lis in lists1">
+                            <a :href="lis.lick">
+                            <img :src="lis.img" alt="">
+                            <p>{{lis.name}}</p>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+                  
+                <div class="sotlis">
+                 <h5>女鞋</h5>
+                  <div class="row">
+                    <div class="col-xs-4" v-for="lis in lists1">
+                            <a :href="lis.lick">
+                            <img :src="lis.img" alt="">
+                            <p>{{lis.name}}</p>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+                  
+                <div class="sotlis">
+                 <h5>母婴童装</h5>
+                  <div class="row">
+                    <div class="col-xs-4" v-for="lis in lists1">
+                            <a :href="lis.lick">
+                            <img :src="lis.img" alt="">
+                            <p>{{lis.name}}</p>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+                  
+                <div class="sotlis">
+                 <h5>户外运动</h5>
+                  <div class="row">
+                    <div class="col-xs-4" v-for="lis in lists1">
+                            <a :href="lis.lick">
+                            <img :src="lis.img" alt="">
+                            <p>{{lis.name}}</p>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+                  
+                <div class="sotlis">
+                 <h5>内衣配饰</h5>
+                  <div class="row">
+                    <div class="col-xs-4" v-for="lis in lists1">
+                            <a :href="lis.lick">
+                            <img :src="lis.img" alt="">
+                            <p>{{lis.name}}</p>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+                  
+                <div class="sotlis">
+                 <h5>食品生鲜</h5>
+                  <div class="row">
+                    <div class="col-xs-4" v-for="lis in lists1">
+                            <a :href="lis.lick">
+                            <img :src="lis.img" alt="">
+                            <p>{{lis.name}}</p>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+                  
+                <div class="sotlis">
+                 <h5>家具家装</h5>
+                  <div class="row">
+                    <div class="col-xs-4" v-for="lis in lists1">
+                            <a :href="lis.lick">
+                            <img :src="lis.img" alt="">
+                            <p>{{lis.name}}</p>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+                  
+                <div class="sotlis">
+                 <h5>箱包手袋</h5>
+                  <div class="row">
+                    <div class="col-xs-4" v-for="lis in lists1">
+                            <a :href="lis.lick">
+                            <img :src="lis.img" alt="">
+                            <p>{{lis.name}}</p>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="sotlis">
+                 <h5>钟表珠宝</h5>
+                  <div class="row">
+                    <div class="col-xs-4" v-for="lis in lists1">
+                            <a :href="lis.lick">
+                            <img :src="lis.img" alt="">
+                            <p>{{lis.name}}</p>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="sotlis">
+                 <h5>图书音像</h5>
+                  <div class="row">
+                    <div class="col-xs-4" v-for="lis in lists1">
+                            <a :href="lis.lick">
+                            <img :src="lis.img" alt="">
+                            <p>{{lis.name}}</p>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="sotlis">
+                 <h5>医药保健</h5>
+                  <div class="row">
+                    <div class="col-xs-4" v-for="lis in lists1">
+                            <a :href="lis.lick">
+                            <img :src="lis.img" alt="">
+                            <p>{{lis.name}}</p>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="sotlis">
+                 <h5>宠物生活</h5>
+                  <div class="row">
+                    <div class="col-xs-4" v-for="lis in lists1">
+                            <a :href="lis.lick">
+                            <img :src="lis.img" alt="">
+                            <p>{{lis.name}}</p>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="sotlis">
+                 <h5>礼品鲜花</h5>
+                  <div class="row">
+                    <div class="col-xs-4" v-for="lis in lists1">
+                            <a :href="lis.lick">
+                            <img :src="lis.img" alt="">
+                            <p>{{lis.name}}</p>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="sotlis">
+                 <h5>农资绿植</h5>
+                  <div class="row">
+                    <div class="col-xs-4" v-for="lis in lists1">
+                            <a :href="lis.lick">
+                            <img :src="lis.img" alt="">
+                            <p>{{lis.name}}</p>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="sotlis">
+                 <h5>生活旅行</h5>
+                  <div class="row">
+                    <div class="col-xs-4" v-for="lis in lists1">
+                            <a :href="lis.lick">
+                            <img :src="lis.img" alt="">
+                            <p>{{lis.name}}</p>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                 <div class="sotlis">
+                 <h5>奢侈品</h5>
+                  <div class="row">
+                    <div class="col-xs-4" v-for="lis in lists1">
+                            <a :href="lis.lick">
+                            <img :src="lis.img" alt="">
+                            <p>{{lis.name}}</p>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+                  
+                   <div class="sotlis">
+                 <h5>全球购</h5>
+                  <div class="row">
+                    <div class="col-xs-4" v-for="lis in lists1">
+                            <a :href="lis.lick">
+                            <img :src="lis.img" alt="">
+                            <p>{{lis.name}}</p>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+                 <div class="sotlis">
+                 <h5>艺术邮币</h5>
+                  <div class="row">
+                    <div class="col-xs-4" v-for="lis in lists1">
+                            <a :href="lis.lick">
+                            <img :src="lis.img" alt="">
+                            <p>{{lis.name}}</p>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+                 <div class="sotlis">
+                 <h5>二手商品</h5>
+                  <div class="row">
+                    <div class="col-xs-4" v-for="lis in lists1">
+                            <a :href="lis.lick">
+                            <img :src="lis.img" alt="">
+                            <p>{{lis.name}}</p>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+                 <div class="sotlis">
+                 <h5>特产馆</h5>
+                  <div class="row">
+                    <div class="col-xs-4" v-for="lis in lists1">
+                            <a :href="lis.lick">
+                            <img :src="lis.img" alt="">
+                            <p>{{lis.name}}</p>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+                 <div class="sotlis">
+                 <h5>京东金融</h5>
+                  <div class="row">
+                    <div class="col-xs-4" v-for="lis in lists1">
+                            <a :href="lis.lick">
+                            <img :src="lis.img" alt="">
+                            <p>{{lis.name}}</p>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+                 <div class="sotlis">
+                 <h5>拍卖</h5>
+                  <div class="row">
+                    <div class="col-xs-4" v-for="lis in lists1">
+                            <a :href="lis.lick">
+                            <img :src="lis.img" alt="">
+                            <p>{{lis.name}}</p>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                 <div class="sotlis">
+                 <h5>房产</h5>
+                  <div class="row">
+                    <div class="col-xs-4" v-for="lis in lists1">
+                            <a :href="lis.lick">
+                            <img :src="lis.img" alt="">
+                            <p>{{lis.name}}</p>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+                
+                </div>                 
+              </div>
+          </div>
+      </div>
+  <div id="app"></div>
+<!--  <span class="m" id="_h">00</span>: <span class="s" id="_m">00</span>: <span class="p" id="_s">00</span>-->
+<!--   top回到顶部-->
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/swiper-4.2.6.min.js"></script>
+    <script src="bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
+    <script src="js/vue.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
