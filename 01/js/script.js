@@ -266,17 +266,20 @@ new Vue({
 
 var ad = document.getElementById("ad");
 var solid = document.getElementById("solid");
+
+if(ad != null){
  if(sessionStorage.ad =="Smith"){
      ad.style.display = "none";
  }else{
      ad.style.display = " block"
 }
-
+}
+if(ad != null){
 solid.onclick=function(){
     ad.style.display="none";
     sessionStorage.ad="Smith";
 }
-
+}
 
 
 
