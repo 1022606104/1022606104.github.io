@@ -1034,3 +1034,20 @@ ul::after{
 .sort .col-xs-9 .sotlis::-webkit-scrollbar{
     display: none;
 }
+/*结束*/
+
+/*觅的页面*/
+.me .search{
+    text-align: center;
+    background: #f5f5f5;
+}
+.me .search i{
+    color: #81838e;
+    padding: 6px;
+}
+.me .search h3{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
