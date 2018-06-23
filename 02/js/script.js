@@ -35,7 +35,7 @@ $(function(){
 });
 //导航条
 
-var mySwiper = new Swiper ('.banner .swiper-container', {
+var mySwiper = new Swiper ('.banner-top .swiper-container', {
     autoplay:true,
     loop: true,
     // 如果需要分页器

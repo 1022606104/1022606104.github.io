@@ -172,7 +172,10 @@ header li .avite{
 .banner img{
     width: 100%;
 }
-.banner .swiper-pagination{
+.banner-top img{
+    width: 100%;
+}
+.banner-top .swiper-pagination{
     width: 60px;
     background: #000;
     border-radius: 20px;
@@ -180,14 +183,14 @@ header li .avite{
     margin-left: -30px;
     opacity: 0.6;
 }
-.banner .swiper-pagination-bullet {
+.banner-top .swiper-pagination-bullet {
     width: 8px;
     height: 8px;
     display: inline-block;
     background: #fff;
     opacity: 0.8;
 }
-.banner .swiper-pagination-bullet-active {
+.banner-top .swiper-pagination-bullet-active {
     opacity: 1;
     background-color:transparent;
     width: 8px;
