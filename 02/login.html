@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="img/home/huihui.ico">
+    <meta charset="UTF-8">
+    <title>登录-惠惠网 - 惠惠</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-3.3.4-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/swiper-4.2.6.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="login">
+<header>
+    <div class="headertop">
+       <div class="home">
+           <a href="index.html"><i><img src="img/home.png" alt=""></i></a>
+       </div>
+       <div class="logo">
+        <img src="img/home/hui_logo.png" alt="">
+       </div>
+       <div class="cate">
+           <p></p>
+       </div>
+    </div>
+</header>
+<div class="gaa"></div>
+<div class="main">
+    <div class="container">
+       <div class="row">
+        <div class="col-xs-12">
+         <h2>使用网易邮箱登录</h2>    
+         <input type="email" name="email" value="网易邮箱登录">
+         <input type="url" name="url" value="密码">
+         <button type="button" class="btn btn-primary">一键登录</button>
+         <p><span><a href="">忘记密码？</a> / 注册</span></p>
+       </div>
+       <div class="qi">
+           <h4><span>丨</span>使用第三方账户登录 <span class=""><i class="fa fa-wechat"></i><i class="fa fa-qq"></i></span></h4>
+       </div>
+    </div>
+   </div>
+</div>
+<div class="banner">
+    <div class="container">
+        <h4><span>丨</span>你可能喜欢</h4>
+        <div class="row">
+         <div class="col-xs-6" v-for="lis in lit">
+            <img :src="lis.img" alt="">
+            <p>{{lis.name}}</p>
+            <span>{{lis.o}}</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="top"></div>
+<div id="top-size"></div>
+<div id="mian"></div>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/swiper-4.2.6.min.js"></script>
+<script src="bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
+<script src="js/vue.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

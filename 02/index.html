@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="shortcut icon" href="img/home/huihui.ico">
+    <meta charset="UTF-8">
+    <title>惠惠网 - 超值你的网购丨网易旗下导购平台丨折扣精选 超值优惠券丨购物返现金丨价格历史 全网比价 - 惠惠</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-3.3.4-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/swiper-4.2.6.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+  <div class="advert">
+    <i class="close"><img src="img/home/close.png" alt=""></i>
+    <div class="brand">
+        <i class="logo"><img src="img/home/logo.png" alt=""></i>
+        <div class="ctn">
+            <div class="txt1">惠惠购物助手</div>
+            <div class="txt2">在这里，发现更多精选折扣</div>
+        </div>
+    </div>
+    <a href="" target="_blank" class="btn" node-type="downloadApp">下载APP</a>
+  </div>  
+<!--   小广告-->
+<!--   header-->
+<header>
+    <div class="headertop">
+       <div class="home">
+           <p></p>
+       </div>
+       <div class="logo">
+        <img src="img/home/hui_logo.png" alt="">
+       </div>
+       <div class="cate">
+           <a href="sorts.html"><i class="fa fa-th-list"></i></a>
+       </div>
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a href="" class="avite">小编精选</a></li>
+            <li><a href="http://www.huihui.cn">原创部落</a></li>
+            <li><a href="">神卷快查</a></li>
+            <li><a href="">购物助手</a></li>
+        </ul>
+    </div>
+
+</header>
+<!--  头部导航-->
+<!--  base-->
+<div class="base">
+    <ul>
+        <li ><a href="index.html" class="active"><i class="fa fa-home"></i><span>首页</span></a></li>
+        <li><a href="sorts.html"><i class="fa fa-list-ul"></i><span>分类</span></a></li>
+        <li><a href="shopping.html"><i class="fa fa-shopping-cart"></i><span>购物车</span></a></li>
+        <li><a href="login.html"><i class="fa fa-user-o"></i><span>我的</span></a></li>
+    </ul>
+</div>
+<!-- 底部导航-->
+<!-- 轮播-->
+<div class="gao"></div>
+<div class="banner">
+   <div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/home/banner.jpg" alt="">
+        </div>
+         <div class="swiper-slide"><img src="img/home/banner1.jpg" alt="">
+        </div>
+         <div class="swiper-slide"><img src="img/home/banner2.jpg" alt="">
+        </div>
+        </div>
+    <!-- 如果需要分页器 -->
+    <div class="swiper-pagination"></div>
+    </div>
+</div>
+<!-- 轮播-->
+<!--     -->
+<div class="clearfix">
+    <div class="container">
+        <div class="row">
+           <div class="col-xs-3 br">
+               <a href="http://temai.m.taobao.com"><img src="img/home/image.png" alt=""></a>
+           </div>    
+            <div class="col-xs-3 br">
+                <a href=""><img src="img/home/image%20(1).png" alt=""></a>
+            </div>
+            <div class="col-xs-3 br">
+               <a href="http://temai.m.taobao.com"><img src="img/home/image%20(2).png" alt=""></a>
+            </div>
+            <div class="col-xs-3 ">
+               <a href=""><img src="img/home/image%20(3).png" alt=""></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- clearfix-->
+<!-- main-->
+<div class="main" id="mian">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="row" v-for="mian in mtext">
+                    <div class="col-xs-3">
+                       <a href="#"><img :src="mian.img" alt=""></a> 
+                    </div>
+                    <div class="col-xs-9">
+                       <a href="">
+                        <h3>{{mian.name}}</h3>
+                        <h4>{{mian.fz}}</h4>
+                        <p>{{mian.fp}}<span><i class="fa fa-heart-o "></i>{{mian.i}}</span><span><i class="fa fa-comments-o">{{mian.o}}</i></span></p>
+                       </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="top"></div>
+<a href=""><div id="top-size"></div></a>
+
+
+
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/swiper-4.2.6.min.js"></script>
+<script src="bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
+<script src="js/vue.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
