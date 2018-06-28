@@ -1,7 +1,7 @@
 var ad = document.querySelector(".advert");
 var solid = document.querySelector(".close");
 if(ad != null){
- if(sessionStorage.ad =="Smith"){
+ if(sessionStorage.dc =="Smith"){
      ad.style.display = "none";
  }else{
      ad.style.display = " block"
@@ -10,7 +10,7 @@ if(ad != null){
 if(ad != null){
 solid.onclick=function(){
     ad.style.display="none";
-    sessionStorage.ad="Smith";
+    sessionStorage.dc="Smith";
 }
 };
 //首页小广告部分接受
@@ -180,6 +180,12 @@ new Vue({
             {name:"迪奥 马卡龙遮瑕膏3.5g",o:"￥278.0元",img:"img/sorts/6.jpg"},
             {name:"大红门 老北京熏鸡 550g*10",o:"￥99.2元",img:"img/sorts/8.png"},
             {name:"安德玛 男士保暖连帽卫衣",o:"$24.29元",img:"img/sorts/9.png"},
+            {name:"俏香阁 麻辣牛肉干 200g/袋",o:"$29.85元",img:"img/sorts/10.png"},
+            {name:"罗派 无铅玻璃水晶杯",o:"$25元",img:"img/sorts/11.png"},
+            {name:"鲜享 农家黑米 500g*3袋",o:"$15.6元",img:"img/sorts/12.png"},
+            {name:"四海 8°p蓝色冰点 整箱",o:"$39.9元",img:"img/sorts/13.png"},
+            {name:"优衣库 SPRZ NY印花T恤",o:"$78元",img:"img/sorts/14.png"},
+            {name:"阿迪达斯 中性 双肩背包",o:"$149元",img:"img/sorts/15.png"},
         ],
         lists1:[
             {name:"食品",img:"img/sorts/icon_2.png",link:""},
@@ -230,7 +236,33 @@ if(img1[0] !=null){
         }
 
 var top=document.getElementById('#top')
-console.log("top")
+console.log("top");
+
+
+
+
+//首页广告
+var p1=document.querySelector(".p1");
+var cp=document.querySelector(".coping");
+if(cp !=null){
+if(sessionStorage.hb =="Smith"){
+     cp.style.display = "none";
+ }else{
+     cp.style.display = " block"
+}
+}
+if(cp !=null){
+p1.onclick=function(){
+    cp.style.display="none";
+    sessionStorage.hb="Smith";
+}
+};
+//弹框
+ var ing = document.querySelector(".coping a");
+ 
+
+
+
 
 
 

@@ -64,7 +64,7 @@ li{
 header{
     opacity: .9;
     position: fixed;
-    z-index: 100;
+    z-index: 10;
     width: 100%;
     
 }
@@ -447,10 +447,12 @@ header li .avite{
     color: #898989;
 }
 .login .col-xs-12 button{    
-    color: #000;
+    color: #fb4a2d;
     background: #fff;
     width: 100%;
     margin-top: 20px;
+    border: 1px solid #fb4a2d; 
+
 }
 .login p{
     margin-top: 4px;
@@ -469,6 +471,31 @@ header li .avite{
     margin-bottom: 25px;
     font-size: 14px;
 }
+/*login*/
+
+.coping{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: .9;
+    z-index: 20;
+    position: fixed;
+}
+.p1 i{
+    color: #000;
+    font-size: 32px;
+    float: right;
+    padding-right: 10px;
+    padding-top: 10px;
+    position: absolute;
+    right: 0;
+}
+.coping img{
+    width: 100%;
+}
+
+
+
 
 
 
