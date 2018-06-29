@@ -468,11 +468,17 @@ header li .avite{
     padding-right: 5px;
 }
 .login h4{
-    color: #898989;
+    color: #000;
+}
+.login .banner span{
+    color: #fb4a2d;
 }
 .login .banner h4{
     margin-bottom: 25px;
     font-size: 14px;
+}
+.login .main{
+    padding-bottom: 120px;
 }
 /*login*/
 
